@@ -17,10 +17,10 @@ struct MountainRangesSection: ListSectionController {
                 .padding(.leading, 15)
                 .padding(.top, 5)
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack(alignment: .center, spacing: 8, content: {
+                LazyHStack(alignment: .center, spacing: 0, content: {
                     ForEach(section.items, id: \.self) { item in
                         switch item {
-                        case let .mountainRange(model): MountainRangeView(item: model)
+                        case let .mountainRange(model): MountainRangeView(item: model).padding(.leading, 10)
                         }
                     }
                 })

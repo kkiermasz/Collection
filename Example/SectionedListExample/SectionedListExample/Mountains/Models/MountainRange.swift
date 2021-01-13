@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MountainRange: Hashable {
     
+    // MARK: - Properties
+    
     let name: String
     
     var image: Image {

@@ -1,3 +1,7 @@
+//
+//  Copyright © 2021 Jakub Kiermasz. All rights reserved.
+//
+
 import SwiftUI
 
 public protocol ListSectionController: Hashable {

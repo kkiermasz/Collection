@@ -1,3 +1,7 @@
+//
+//  Copyright © 2021 Jakub Kiermasz. All rights reserved.
+//
+
 import SwiftUI
 
 struct AnyListSectionController {
@@ -7,18 +11,16 @@ struct AnyListSectionController {
     
     let closure: (AnySection) -> AnyView
 
-    // MARK: - Initializers
+    // MARK: - Initialization
     
     init<ListSectionControllerType: ListSectionController>(wrapping controller: ListSectionControllerType) {
         base = controller
         sectionControllerType = ListSectionControllerType.self
         
         closure = { section in
-            guard let section1: ListSectionControllerType.SectionType = section.tryUnbox() else { preconditionFailure() }
-            return AnyView(controller.view(for: section1))
+            guard let restored: ListSectionControllerType.SectionType = section.restore() else { preconditionFailure() }
+            return AnyView(controller.view(for: restored))
         }
     }
-    
-    func tryUnbox<SectionType: SectionedListSection>() -> SectionType? { base as? SectionType }
     
 }

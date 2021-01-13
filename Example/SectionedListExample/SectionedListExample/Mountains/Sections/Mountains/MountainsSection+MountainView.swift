@@ -1,5 +1,5 @@
 //
-//  MountainRangesSection+MountainRangeView.swift
+//  MountainsSection+MountainView.swift
 //  SectionedListExample
 //
 //  Created by Jakub Kiermasz on 13/01/2021.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-extension MountainRangesSection {
-    
-    struct MountainRangeView: View {
-        
+extension MountainsSection {
+
+    struct MountainView: View {
+
         // MARK: - Properties
-        
-        let item: MountainRange
-        
-        // MARK: - Getters
-        
+
+        let item: Mountain
+
+        // MARK: - Initialization
+
         var body: some View {
             ZStack {
                 item.image
@@ -26,12 +26,12 @@ extension MountainRangesSection {
                     .foregroundColor(.white)
                     .font(.title2)
                     .fontWeight(.bold)
-                    .shadow(radius: 12)
+                    .shadow(color: .black, radius: 6)
             }
-            .frame(width: 155, height: 155)
+            .frame(height: 48)
             .cornerRadius(8)
         }
-        
+
     }
-    
+
 }

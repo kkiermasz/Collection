@@ -13,19 +13,11 @@ struct MountainsView: View {
     
     var body: some View {
         NavigationView {
-            SectionedList(model: viewModel.sections) {
+            SectionedList(showsIndicators: false, model: viewModel.sections) {
                 MountainRangesSection()
                 MountainsSection()
             }
             .navigationTitle("Mountains list")
         }
-    }
-}
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MountainsView()
     }
 }

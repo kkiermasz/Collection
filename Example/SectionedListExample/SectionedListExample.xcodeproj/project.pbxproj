@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2516C4DC25AF72380004D40B /* MountainsSection+MountainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516C4DB25AF72380004D40B /* MountainsSection+MountainView.swift */; };
 		25C5258525ACD6AB00C10544 /* SectionedListExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C5258425ACD6AB00C10544 /* SectionedListExampleApp.swift */; };
 		25C5258725ACD6AB00C10544 /* MountainsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C5258625ACD6AB00C10544 /* MountainsView.swift */; };
 		25C5258925ACD6AE00C10544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C5258825ACD6AE00C10544 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2516C4DB25AF72380004D40B /* MountainsSection+MountainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MountainsSection+MountainView.swift"; sourceTree = "<group>"; };
 		25C5258125ACD6AB00C10544 /* SectionedListExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectionedListExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C5258425ACD6AB00C10544 /* SectionedListExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedListExampleApp.swift; sourceTree = "<group>"; };
 		25C5258625ACD6AB00C10544 /* MountainsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2516C4DE25AF72A10004D40B /* Mountains */ = {
+			isa = PBXGroup;
+			children = (
+				25C5259C25ACD8C500C10544 /* MountainsSection.swift */,
+				2516C4DB25AF72380004D40B /* MountainsSection+MountainView.swift */,
+			);
+			path = Mountains;
+			sourceTree = "<group>";
+		};
+		2516C4DF25AF72A80004D40B /* MountainRanges */ = {
+			isa = PBXGroup;
+			children = (
+				25C525A025ACD8DB00C10544 /* MountainRangesSection.swift */,
+				25E9F04325AED23B00F3C139 /* MountainRangesSection+MountainRangeView.swift */,
+			);
+			path = MountainRanges;
+			sourceTree = "<group>";
+		};
 		25C5257825ACD6AB00C10544 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +124,7 @@
 		25C5259725ACD6FC00C10544 /* Mountains */ = {
 			isa = PBXGroup;
 			children = (
-				25C525BF25ACDAC900C10544 /* Sections */,
+				25C525BF25ACDAC900C10544 /* UIModels */,
 				25C525A325ACD8EE00C10544 /* Models */,
 				25C5259B25ACD8B900C10544 /* Sections */,
 				25C5259A25ACD8AE00C10544 /* View */,
@@ -132,9 +152,8 @@
 		25C5259B25ACD8B900C10544 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				25C5259C25ACD8C500C10544 /* MountainsSection.swift */,
-				25C525A025ACD8DB00C10544 /* MountainRangesSection.swift */,
-				25E9F04325AED23B00F3C139 /* MountainRangesSection+MountainRangeView.swift */,
+				2516C4DF25AF72A80004D40B /* MountainRanges */,
+				2516C4DE25AF72A10004D40B /* Mountains */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -166,15 +185,15 @@
 			path = Mountains;
 			sourceTree = "<group>";
 		};
-		25C525BF25ACDAC900C10544 /* Sections */ = {
+		25C525BF25ACDAC900C10544 /* UIModels */ = {
 			isa = PBXGroup;
 			children = (
 				25C525A525ACD8FE00C10544 /* Sections.swift */,
 				25C525A925ACD91200C10544 /* MountainRanges */,
 				25C525AD25ACD94900C10544 /* Mountains */,
 			);
-			name = Sections;
-			path = Models/Sections;
+			name = UIModels;
+			path = Models/UIModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +270,7 @@
 			files = (
 				25E9F04425AED23B00F3C139 /* MountainRangesSection+MountainRangeView.swift in Sources */,
 				25C525C625ACDAFB00C10544 /* MountainRange.swift in Sources */,
+				2516C4DC25AF72380004D40B /* MountainsSection+MountainView.swift in Sources */,
 				25C525B425ACD97300C10544 /* Sections+MountainRanges+Item.swift in Sources */,
 				25C525A625ACD8FE00C10544 /* Sections.swift in Sources */,
 				25C525C225ACDAF500C10544 /* Mountain.swift in Sources */,

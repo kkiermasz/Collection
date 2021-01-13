@@ -1,25 +1,25 @@
-public struct AnySection: SectionedListSection {
+//
+//  Copyright © 2021 Jakub Kiermasz. All rights reserved.
+//
+
+public struct AnySection: Hashable {
     
     // MARK: - Properties
-
-    public let items: [AnyItem]
 
     let sectionType: Any
 
     private let base: AnyHashable
 
-    // MARK: - Initializers
+    // MARK: - Initialization
 
     init<SectionType: SectionedListSection>(wrapping section: SectionType) {
-        items = section.items.map { item in AnyItem(wrapping: item) }
-
         base = section
         sectionType = SectionType.self
     }
 
     // MARK: - API
 
-    func tryUnbox<SectionType: SectionedListSection>() -> SectionType? { base as? SectionType }
+    func restore<SectionType: SectionedListSection>() -> SectionType? { base as? SectionType }
 
     // MARK: - Equatable
 

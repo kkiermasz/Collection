@@ -1,3 +1,7 @@
+//
+//  Copyright © 2021 Jakub Kiermasz. All rights reserved.
+//
+
 public protocol SectionedListSection: Hashable {
 
     // MARK: - Type Aliases
@@ -12,6 +16,6 @@ public protocol SectionedListSection: Hashable {
 
 extension SectionedListSection {
     
-    public var boxed: AnySection { AnySection(wrapping: self) }
+    public func eraseToAnySection() -> AnySection { AnySection(wrapping: self) }
     
 }

@@ -14,17 +14,19 @@ extension MountainsView {
         @Published var sections: [AnySection] = [
             Sections.Mountains(items: [
                 .mountain(Mountain(name: "Mount Everest")),
-                .mountain(Mountain(name: "Mount Blanc"))
-            ]).boxed,
+                .mountain(Mountain(name: "Mont Blanc")),
+                .mountain(Mountain(name: "Gerlachov Peak")),
+                .mountain(Mountain(name: "K2")),
+            ]).eraseToAnySection(),
             Sections.MountainRanges(name: "European mountain ranges", items: [
                 .mountainRange(MountainRange(name: "Alpes")),
                 .mountainRange(MountainRange(name: "Tatras")),
                 .mountainRange(MountainRange(name: "Apennines"))
-            ]).boxed,
+            ]).eraseToAnySection(),
             Sections.MountainRanges(name: "Asian mountain ranges", items: [
                 .mountainRange(MountainRange(name: "Himalayas")),
                 .mountainRange(MountainRange(name: "Karakoram"))
-            ]).boxed
+            ]).eraseToAnySection()
         ]
     }
 

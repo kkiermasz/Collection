@@ -14,20 +14,17 @@ struct MountainsSection: ListSectionController {
         VStack(alignment: .leading) {
             Text("Mountains")
                 .font(.headline)
-                .padding(.leading, 15)
+                .padding(.leading, 5)
                 .padding(.top, 5)
             LazyVStack(alignment: .center, spacing: 8, content: {
                 ForEach(section.items, id: \.self) { item in
                     switch item {
-                    case let .mountain(model):
-                        ZStack {
-                            Rectangle().foregroundColor(.secondary).cornerRadius(4).frame(height: 48)
-                            Text(model.name).padding(8).accentColor(.primary)
-                        }
+                    case let .mountain(model): MountainView(item: model)
                     }
                 }
             })
         }
+        .padding(.horizontal, 10)
     }
 
 }
