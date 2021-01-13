@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Himalayas.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

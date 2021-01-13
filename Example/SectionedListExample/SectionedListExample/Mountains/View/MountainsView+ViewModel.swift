@@ -16,9 +16,14 @@ extension MountainsView {
                 .mountain(Mountain(name: "Mount Everest")),
                 .mountain(Mountain(name: "Mount Blanc"))
             ]).boxed,
-            Sections.MountainRanges(items: [
+            Sections.MountainRanges(name: "European mountain ranges", items: [
                 .mountainRange(MountainRange(name: "Alpes")),
-                .mountainRange(MountainRange(name: "Tatras"))
+                .mountainRange(MountainRange(name: "Tatras")),
+                .mountainRange(MountainRange(name: "Apennines"))
+            ]).boxed,
+            Sections.MountainRanges(name: "Asian mountain ranges", items: [
+                .mountainRange(MountainRange(name: "Himalayas")),
+                .mountainRange(MountainRange(name: "Karakoram"))
             ]).boxed
         ]
     }

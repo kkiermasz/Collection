@@ -10,7 +10,11 @@ import SectionedList
 extension Sections {
     
     struct Mountains: SectionedListSection {
-        var items: [Item]
+        
+        // MARK: - Properties
+        
+        let items: [Item]
+        
     }
     
 }

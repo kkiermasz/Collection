@@ -22,6 +22,7 @@
 		25C525C225ACDAF500C10544 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C525C125ACDAF500C10544 /* Mountain.swift */; };
 		25C525C625ACDAFB00C10544 /* MountainRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C525C525ACDAFB00C10544 /* MountainRange.swift */; };
 		25C525C925ACDB3600C10544 /* MountainsView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C525C825ACDB3600C10544 /* MountainsView+ViewModel.swift */; };
+		25E9F04425AED23B00F3C139 /* MountainRangesSection+MountainRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9F04325AED23B00F3C139 /* MountainRangesSection+MountainRangeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		25C525C125ACDAF500C10544 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		25C525C525ACDAFB00C10544 /* MountainRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainRange.swift; sourceTree = "<group>"; };
 		25C525C825ACDB3600C10544 /* MountainsView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MountainsView+ViewModel.swift"; sourceTree = "<group>"; };
+		25E9F04325AED23B00F3C139 /* MountainRangesSection+MountainRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MountainRangesSection+MountainRangeView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				25C5259C25ACD8C500C10544 /* MountainsSection.swift */,
 				25C525A025ACD8DB00C10544 /* MountainRangesSection.swift */,
+				25E9F04325AED23B00F3C139 /* MountainRangesSection+MountainRangeView.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E9F04425AED23B00F3C139 /* MountainRangesSection+MountainRangeView.swift in Sources */,
 				25C525C625ACDAFB00C10544 /* MountainRange.swift in Sources */,
 				25C525B425ACD97300C10544 /* Sections+MountainRanges+Item.swift in Sources */,
 				25C525A625ACD8FE00C10544 /* Sections.swift in Sources */,

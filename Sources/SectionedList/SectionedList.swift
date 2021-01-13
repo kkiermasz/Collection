@@ -11,6 +11,13 @@ public struct SectionedList: View {
                 registry.view(for: section)
             }
         }
+//        ScrollView {
+//        VStack {
+//            ForEach(sections, id: \.self) { section in
+//                registry.view(for: section)
+//            }
+//        }
+//        }
     }
 
     public init(model: [AnySection], @SectionedListBuilder builder: () -> Registry) {

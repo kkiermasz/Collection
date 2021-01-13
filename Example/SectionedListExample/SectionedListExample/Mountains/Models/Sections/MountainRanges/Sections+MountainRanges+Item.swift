@@ -8,7 +8,11 @@
 extension Sections.MountainRanges {
     
     enum Item: Hashable {
+        
+        // MARK: - Cases
+        
         case mountainRange(MountainRange)
+        
     }
     
 }
