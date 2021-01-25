@@ -3,24 +3,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "SectionedList",
+    name: "Collection",
     platforms: [
         .iOS(.v14),
         .macOS(.v10_15),
     ],
     products: [
         .library(
-            name: "SectionedList",
-            targets: ["SectionedList"]
+            name: "Collection",
+            targets: ["Collection"]
         ),
     ],
     targets: [
         .target(
-            name: "SectionedList"
+            name: "Collection"
         ),
         .testTarget(
-            name: "SectionedListTests",
-            dependencies: ["SectionedList"]
+            name: "CollectionTests",
+            dependencies: ["Collection"]
         ),
     ]
 )

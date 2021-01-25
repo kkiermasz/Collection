@@ -1,6 +1,6 @@
-# SectionedList
+# Collection
 
-SectionedList is a simple wrapper for a ScrollView, to facilitate the creation of complex list layouts in SwiftUI. This is a kind of workaround for the lack of collection view in SwiftUI.
+Collection is a simple wrapper for a ScrollView, to facilitate the creation of complex list layouts in SwiftUI. This is a kind of workaround for the lack of collection view in SwiftUI.
 
 It allows your main view to look like this:
 ```swift
@@ -9,7 +9,7 @@ struct MountainsView: View {
     
     var body: some View {
         NavigationView {
-            SectionedList(showsIndicators: false, model: viewModel.sections) {
+            Collection(showsIndicators: false, model: viewModel.sections) {
                 MountainRangesSection()
                 MountainsSection()
             }
@@ -26,4 +26,4 @@ Remember that you have to build the package first.
 
 ## License
 
-SectionedList is shared under the MIT license. See the [LICENSE](./LICENSE) for more info.
+Collection is shared under the MIT license. See the [LICENSE](./LICENSE) for more info.
