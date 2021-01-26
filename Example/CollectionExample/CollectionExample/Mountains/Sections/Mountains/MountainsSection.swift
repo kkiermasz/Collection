@@ -8,7 +8,7 @@
 import Collection
 import SwiftUI
 
-struct MountainsSection: ListSectionController {
+struct MountainsSection: CollectionSectionController {
 
     func view(for section: Sections.Mountains) -> some View {
         VStack(alignment: .leading) {

@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-public protocol ListSectionController: Hashable {
+public protocol CollectionSectionController: Hashable {
     
     associatedtype SectionType: CollectionSection
     associatedtype ViewType: View

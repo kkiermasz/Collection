@@ -9,20 +9,20 @@ public struct CollectionBuilder {
     // due to the associated values, it had to be done this way.
     // If you have any idea how to work around it let me know in any way
     
-    public static func buildBlock<C0: ListSectionController>(_ controller: C0) -> Registry {
+    public static func buildBlock<C0: CollectionSectionController>(_ controller: C0) -> Registry {
         let registry = Registry()
         registry.register(controller: controller)
         return registry
     }
     
-    public static func buildBlock<C0: ListSectionController, C1: ListSectionController>(_ c0: C0, _ c1: C1) -> Registry {
+    public static func buildBlock<C0: CollectionSectionController, C1: CollectionSectionController>(_ c0: C0, _ c1: C1) -> Registry {
         let registry = Registry()
         registry.register(controller: c0)
         registry.register(controller: c1)
         return registry
     }
     
-    public static func buildBlock<C0: ListSectionController, C1: ListSectionController, C2: ListSectionController>(_ c0: C0, _ c1: C1, _ c2: C2) -> Registry {
+    public static func buildBlock<C0: CollectionSectionController, C1: CollectionSectionController, C2: CollectionSectionController>(_ c0: C0, _ c1: C1, _ c2: C2) -> Registry {
         let registry = Registry()
         registry.register(controller: c0)
         registry.register(controller: c1)
@@ -30,7 +30,7 @@ public struct CollectionBuilder {
         return registry
     }
     
-    public static func buildBlock<C0: ListSectionController, C1: ListSectionController, C2: ListSectionController, C3: ListSectionController>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3) -> Registry {
+    public static func buildBlock<C0: CollectionSectionController, C1: CollectionSectionController, C2: CollectionSectionController, C3: CollectionSectionController>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3) -> Registry {
         let registry = Registry()
         registry.register(controller: c0)
         registry.register(controller: c1)
@@ -39,7 +39,7 @@ public struct CollectionBuilder {
         return registry
     }
     
-    public static func buildBlock<C0: ListSectionController, C1: ListSectionController, C2: ListSectionController, C3: ListSectionController, C4: ListSectionController>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, _ c4: C4) -> Registry {
+    public static func buildBlock<C0: CollectionSectionController, C1: CollectionSectionController, C2: CollectionSectionController, C3: CollectionSectionController, C4: CollectionSectionController>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, _ c4: C4) -> Registry {
         let registry = Registry()
         registry.register(controller: c0)
         registry.register(controller: c1)

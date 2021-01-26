@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct AnyListSectionController {
+struct AnyCollectionSectionController {
  
     let sectionControllerType: Any
     let base: AnyHashable
@@ -13,12 +13,12 @@ struct AnyListSectionController {
 
     // MARK: - Initialization
     
-    init<ListSectionControllerType: ListSectionController>(wrapping controller: ListSectionControllerType) {
+    init<CollectionSectionControllerType: CollectionSectionController>(wrapping controller: CollectionSectionControllerType) {
         base = controller
-        sectionControllerType = ListSectionControllerType.self
+        sectionControllerType = CollectionSectionControllerType.self
         
         closure = { section in
-            guard let restored: ListSectionControllerType.SectionType = section.restore() else { preconditionFailure() }
+            guard let restored: CollectionSectionControllerType.SectionType = section.restore() else { preconditionFailure() }
             return AnyView(controller.view(for: restored))
         }
     }

@@ -8,7 +8,7 @@ public final class Registry {
     
     // MARK: - Properties
     
-    private var registry: [String: AnyListSectionController] = [:]
+    private var registry: [String: AnyCollectionSectionController] = [:]
     
     // MARK: - Initialization
     
@@ -16,15 +16,15 @@ public final class Registry {
     
     // MARK: - Internal
     
-    func register<ControllerType: ListSectionController>(controller: ControllerType) {
+    func register<ControllerType: CollectionSectionController>(controller: ControllerType) {
         let identifier = String(reflecting: ControllerType.SectionType.self)
-        registry[identifier] = AnyListSectionController(wrapping: controller)
+        registry[identifier] = AnyCollectionSectionController(wrapping: controller)
     }
     
     func view(for section: AnySection) -> some View {
         let identifier = String(reflecting: section.sectionType)
         guard let controller = registry[identifier] else {
-            preconditionFailure("Register \"ListSectionController\" type for \(identifier)")
+            preconditionFailure("Register \"CollectionSectionController\" type for \(identifier)")
         }
         return controller.closure(section)
     }
