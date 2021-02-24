@@ -27,10 +27,10 @@ public struct Collection: View {
 
     // MARK: - Initialization
     
-    public init(showsIndicators: Bool = true, model: [AnySection], @CollectionBuilder builder: () -> Registry) {
+    public init(showsIndicators: Bool = true, dataSource: CollectionDataSource, @CollectionBuilder builder: () -> Registry) {
         self.showsIndicators = showsIndicators
         registry = builder()
-        sections = model
+        sections = dataSource.sections
     }
     
 }

@@ -18,7 +18,9 @@ struct AnyCollectionSectionController {
         sectionControllerType = CollectionSectionControllerType.self
         
         closure = { section in
-            guard let restored: CollectionSectionControllerType.SectionType = section.restore() else { preconditionFailure() }
+            guard let restored: CollectionSectionControllerType.SectionType = section.restore() else {
+                preconditionFailure("Closure argument type does not match controller's section type")
+            }
             return AnyView(controller.view(for: restored))
         }
     }

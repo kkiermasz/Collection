@@ -13,7 +13,7 @@ struct MountainsView: View {
     
     var body: some View {
         NavigationView {
-            Collection(showsIndicators: false, model: viewModel.sections) {
+            Collection(showsIndicators: false, dataSource: viewModel) {
                 MountainRangesSection()
                 MountainsSection()
             }

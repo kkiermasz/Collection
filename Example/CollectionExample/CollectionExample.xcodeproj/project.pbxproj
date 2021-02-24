@@ -97,11 +97,11 @@
 		25C5258325ACD6AB00C10544 /* CollectionExample */ = {
 			isa = PBXGroup;
 			children = (
-				25C5259825ACD70A00C10544 /* SupportingFiles */,
-				25C5259725ACD6FC00C10544 /* Mountains */,
 				25C5258425ACD6AB00C10544 /* CollectionExampleApp.swift */,
 				25C5258825ACD6AE00C10544 /* Assets.xcassets */,
+				25C5259725ACD6FC00C10544 /* Mountains */,
 				25C5258A25ACD6AE00C10544 /* Preview Content */,
+				25C5259825ACD70A00C10544 /* SupportingFiles */,
 			);
 			path = CollectionExample;
 			sourceTree = "<group>";
