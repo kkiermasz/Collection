@@ -1,8 +1,8 @@
+This repository was created for the purpose of [article on Medium](https://betterprogramming.pub/building-a-complex-list-in-swiftui-196a6989726b).
+
 # Collection
 
 Collection is a simple wrapper for a ScrollView, to facilitate the creation of complex list layouts in SwiftUI. This is a kind of workaround for the lack of collection view in SwiftUI.
-
-this repository was created for the purpose of [article on Medium](https://betterprogramming.pub/building-a-complex-list-in-swiftui-196a6989726b).
 
 It allows your main view to look like this:
 ```swift
