@@ -1,4 +1,4 @@
-This repository was created for the purpose of [article on Medium](https://betterprogramming.pub/building-a-complex-list-in-swiftui-196a6989726b).
+This repository was created for the purpose of [article on Medium](https://jakubkiermasz.medium.com/building-a-complex-list-in-swiftui-196a6989726b).
 
 # Collection
 
